@@ -10,4 +10,11 @@ describe 'Solver' do
       expect(@solver).to be_instance_of Solver
     end
   end
+
+  context '#factorial' do
+    it 'should return the factorial of a number' do
+      num = 5
+      expect(@solver.factorial(num)).to eq 120
+    end
+  end
 end
