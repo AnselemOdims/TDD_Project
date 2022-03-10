@@ -10,4 +10,17 @@ class Solver
   def reverse(word)
     word.reverse
   end
+
+  def fizzbuzz(num)
+    raise TypeError.new('value mmust be a number') if !num.is_a?(Integer) 
+    if num % 3 == 0 && num % 5 == 0 
+      'fizzbuzz'
+    elsif num % 3 == 0
+      'fizz' 
+    elsif num % 5 == 0 
+      'buzz' 
+    else
+     "#{num}"
+    end
+  end
 end

@@ -49,29 +49,29 @@ describe 'Solver' do
     end
 
     it 'should return the result as a string' do
-      expect{ @solver.fizzbuzz(5) }.to be_instance_of(String)
+      expect(@solver.fizzbuzz(5)).to be_instance_of(String)
     end
 
     it 'should return "fizz" when param is divisible by 3 ' do
-      expect{ @solver.fizzbuzz(3) }.to eq 'fizz' 
-      expect{ @solver.fizzbuzz(6) }.to eq 'fizz' 
-      expect{ @solver.fizzbuzz(9) }.to eq 'fizz' 
+      expect(@solver.fizzbuzz(3)).to eq 'fizz' 
+      expect(@solver.fizzbuzz(6) ).to eq 'fizz' 
+      expect(@solver.fizzbuzz(9)).to eq 'fizz' 
     end
 
     it 'should return "buzz" when param is divisible by 5 ' do
-      expect{ @solver.fizzbuzz(5) }.to eq 'buzz' 
-      expect{ @solver.fizzbuzz(10) }.to eq 'buzz' 
-      expect{ @solver.fizzbuzz(20) }.to eq 'buzz' 
+      expect(@solver.fizzbuzz(5)).to eq 'buzz' 
+      expect(@solver.fizzbuzz(10)).to eq 'buzz' 
+      expect(@solver.fizzbuzz(20)).to eq 'buzz' 
     end
 
     it 'should return "fizzbuzz" when param is divisible by 3 and 5' do
-      expect{ @solver.fizzbuzz(15) }.to eq 'fizzbuzz' 
-      expect{ @solver.fizzbuzz(30) }.to eq 'fizzbuzz' 
-      expect{ @solver.fizzbuzz(900) }.to eq 'fizzbuzz' 
+      expect(@solver.fizzbuzz(15)).to eq 'fizzbuzz' 
+      expect(@solver.fizzbuzz(30)).to eq 'fizzbuzz' 
+      expect(@solver.fizzbuzz(900)).to eq 'fizzbuzz' 
     end
 
     it 'should return "7" when  param is 7' do
-      expect{ @solver.fizzbuzz(7) }.to eq '7' 
+      expect(@solver.fizzbuzz(7)).to eq '7' 
     end
   end
 end
