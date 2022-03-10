@@ -19,7 +19,7 @@ describe 'Solver' do
 
     it 'should return error if number is not a positive integer' do
       num = -1
-      expect(@solver(num)).to raise_exception("number should not be a negative integer")
+      expect{ @solver.factorial(num) }.to raise_exception(TypeError)
     end
   end
 end
