@@ -33,5 +33,9 @@ describe 'Solver' do
       reversed_hello = @solver.reverse('hello')
       expect(reversed_hello).to eq 'olleh'
     end
+
+    it 'function should be given just one paramater' do
+      expect{ @solver.reverse('word','secondstr') }.to raise_exception(ArgumentError)
+    end
   end
 end
