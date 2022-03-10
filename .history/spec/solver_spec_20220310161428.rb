@@ -24,14 +24,7 @@ describe 'Solver' do
   end
 
   context '#reverse' do 
-    it 'word string should returned as drow' do
-      reversed_word = @solver.reverse('word')
-      expect(reversed_word).to eq 'drow'
-    end
+    it 'should be ' do
 
-    it 'hello string should returned as olleh' do
-      reversed_hello = @solver.reverse('hello')
-      expect(reversed_hello).to eq 'olleh'
-    end
   end
 end

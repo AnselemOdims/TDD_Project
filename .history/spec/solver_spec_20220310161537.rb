@@ -25,13 +25,11 @@ describe 'Solver' do
 
   context '#reverse' do 
     it 'word string should returned as drow' do
-      reversed_word = @solver.reverse('word')
-      expect(reversed_word).to eq 'drow'
+
     end
 
-    it 'hello string should returned as olleh' do
-      reversed_hello = @solver.reverse('hello')
-      expect(reversed_hello).to eq 'olleh'
+    it 'hello string should returned as drow' do
+
     end
   end
 end
