@@ -1,6 +1,6 @@
 require_relative '../solver'
 
-describe 'Solve' do
+describe 'Solver' do
   before :each do
     @solver = Solver.new
   end
