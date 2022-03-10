@@ -16,5 +16,10 @@ describe 'Solver' do
       num = 5
       expect(@solver.factorial(num)).to eq 120
     end
+
+    it 'should return error if number is not a positive integer' do
+      num = -1
+      expect(@solver(num)).to raise_exception("number should not be a negative integer")
+    end
   end
 end
